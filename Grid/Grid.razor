@@ -3,7 +3,7 @@
 <Stylesheet Src="_content/Excubo.Blazor.Grids/style.min.css" />
 <div style="display: grid;
             position: relative;
-            @(column_definitions.Any() ? ("grid-template-columns: " + string.Join(" ", column_definitions.Select(d => d.Width))): "");
+            @(column_definitions.Any() ? ($"grid-template-columns: {ColumnTemplate}"): "");
             @(row_definitions.Any() ? ("grid-template-rows: " + string.Join(" ", row_definitions.Select(d => d.Height))) : "");
             @(areas.Any() ? ("grid-template-areas: " + AreaString) : "");
             grid-column-gap: @ColumnGap;
@@ -30,4 +30,17 @@
 @code {
     internal ElementReference Area;
     internal MovingIndicatorOverlay MovingIndicatorOverlay;
+
+    internal string  ColumnTemplate {
+
+        get
+        {
+            if (AutoFitColumns)
+            {
+                return $"repeat(auto-fill,{column_definitions.First().Width})";
+            }
+            return string.Join(" ", column_definitions.Select(d => d.Width));
+
+       }
+    }
 }

@@ -3,8 +3,8 @@
 
 A dashboard is a grid that sets an <a href="aspect_ratio">AspectRatio</a>, <a href="movable_elements">AllowMove</a>, <a href="resizable_elements">AllowResize</a>, and AutoRows.
 This dashboard has four columns.
-
-<Dashboard AspectRatio="1.5" style="height: 100%" ColumnCount="4">
+<button @onclick="AddElement">Add Element</button>
+<Dashboard AspectRatio="1.5" style="height: 100%" ColumnCount="4" >
     @foreach (var element in elements)
     {
         <Element @key="element" @bind-Row="element.Row" @bind-Column="element.Column" @bind-RowSpan="element.RowSpan" @bind-ColumnSpan="element.ColumnSpan"
@@ -34,4 +34,9 @@ This dashboard has four columns.
         new ElementDefinition { Row = 5, Column = 0, ColumnSpan = 2, Color = "cyan" },
         new ElementDefinition { Row = 1, Column = 2, RowSpan = 3, Color = "#88884488" }
     };
+
+    private void AddElement()
+    {
+        elements.Add(new ElementDefinition { Color = "purple" });
+    }
 }

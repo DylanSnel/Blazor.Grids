@@ -1,8 +1,8 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Components;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Components;
 
 namespace Excubo.Blazor.Grids
 {
@@ -48,12 +48,13 @@ namespace Excubo.Blazor.Grids
         /// Whether to allow resizing elements or not. Default is false.
         /// Note that this feature is only supported when an AspectRatio is set, otherwise this flag has no effect.
         /// </summary>
-        [Parameter] public bool AllowResize 
+        [Parameter]
+        public bool AllowResize
         {
             get { return allowResize; }
             set
             {
-                if(allowResize != value)
+                if (allowResize != value)
                 {
                     allowResize = value;
                     StateHasChanged();
@@ -68,7 +69,8 @@ namespace Excubo.Blazor.Grids
         /// Note that this feature is only supported when an AspectRatio is set, otherwise this flag has no effect.
         /// Important: elements are movable by dragging the title bar. Hence, without setting a title for your element, your element won't have a title bar and you won't be able to move them.
         /// </summary>
-        [Parameter] public bool AllowMove
+        [Parameter]
+        public bool AllowMove
         {
             get { return allowMove; }
             set
@@ -93,6 +95,12 @@ namespace Excubo.Blazor.Grids
         /// If enabled, the Grid manages the number of rows automatically. This is useful for the dashboard scenario where elements can be moved down as much as wanted, and the Grid just adds rows.
         /// </summary>
         [Parameter] public bool AutoRows { get; set; }
+        /// <summary>
+        /// If enabled, the Grid manages the number of columns automatically. It will automatically repeat the widh of the first column as often as fits.
+        /// </summary>
+        [Parameter] public bool AutoFitColumns { get; set; }
+
+
         /// <summary>
         /// Callback for when an element is moved.
         /// </summary>
