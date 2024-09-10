@@ -4,7 +4,7 @@
 <div style="display: grid;
             position: relative;
             @(column_definitions.Any() ? ($"grid-template-columns: {ColumnTemplate}"): "");
-            @(row_definitions.Any() ? ("grid-template-rows: " + string.Join(" ", row_definitions.Select(d => d.Height))) : "");
+            @(row_definitions.Any() ? RowsTemlate : "");
             @(areas.Any() ? ("grid-template-areas: " + AreaString) : "");
             grid-column-gap: @ColumnGap;
             grid-row-gap: @RowGap;
@@ -42,5 +42,19 @@
             return string.Join(" ", column_definitions.Select(d => d.Width));
 
        }
+    }
+
+    internal string RowsTemlate
+    {
+
+        get
+        {
+            if (AutoFitRows)
+            {
+                return $"grid-auto-rows: {row_definitions.First().Height};";
+            }
+            return "grid-template-rows: " + string.Join(" ", row_definitions.Select(d => d.Height));
+
+        }
     }
 }

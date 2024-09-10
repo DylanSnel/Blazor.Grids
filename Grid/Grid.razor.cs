@@ -96,9 +96,14 @@ namespace Excubo.Blazor.Grids
         /// </summary>
         [Parameter] public bool AutoRows { get; set; }
         /// <summary>
-        /// If enabled, the Grid manages the number of columns automatically. It will automatically repeat the widh of the first column as often as fits.
+        /// If enabled, the Grid manages the number of columns automatically. It will automatically repeat the width of the first column as often as fits.
         /// </summary>
         [Parameter] public bool AutoFitColumns { get; set; }
+
+        /// <summary>
+        /// If enabled, the Grid manages the number of rows automatically. It will automatically repeat the width of the first row as often as fits.
+        /// </summary>
+        [Parameter] public bool AutoFitRows { get; set; }
 
 
         /// <summary>
