@@ -16,6 +16,6 @@ namespace Excubo.Blazor.Grids
             }
         }
         [Parameter] public string Width { get; set; } = "auto";
-        [Parameter] public int Count { get; set; }
+        [Parameter] public int Count { get; set; } = 1;
     }
 }

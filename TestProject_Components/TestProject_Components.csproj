@@ -5,4 +5,9 @@
   <ItemGroup>
     <ProjectReference Include="..\Grid\Blazor.Grids.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Update="wwwroot\site.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
 </Project>

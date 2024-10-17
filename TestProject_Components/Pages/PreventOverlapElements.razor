@@ -2,8 +2,8 @@
 <SourceCodeLink Repository="Blazor.Grids" Page="@(nameof(PreventOverlapElements))" />
 In this demo, all elements are <a href="movable_elements">movable</a> and <a href="resizable_elements">resizable</a>, and we also prevent any two elements from overlapping.
 Important: This feature only works if an <a href="aspect_ratio">AspectRatio</a> is set.
-
-<Grid AspectRatio="1.5" AllowMove="true" AllowResize="true" PreventOverlaps="true" AutoRows="true" style="height: 100%">
+<button @onclick="AddElement">Add Element</button>
+<Grid AspectRatio="1.5" AllowMove="true" AllowResize="true"  PreventOverlaps="true" AutoRows="true" style="height: 100%" >
     <Columns Count="4" Width="1fr" />
     @foreach (var element in elements)
     {
@@ -31,4 +31,9 @@ Important: This feature only works if an <a href="aspect_ratio">AspectRatio</a> 
         new ElementDefinition { Row = 2, Column = 1, ColumnSpan = 3, Color = "cyan" },
         new ElementDefinition { Row = 1, Column = 2, RowSpan = 3, Color = "#88884488" }
     };
+
+    private void AddElement()
+    {
+        elements.Add(new ElementDefinition { Color = "purple" });
+    }
 }
