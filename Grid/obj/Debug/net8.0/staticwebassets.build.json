@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "Hash": "Wy3f/V8zpGgbppW3J1GflGNuhJ28rvmCz59fjYPcvxA=",
+  "Source": "Excubo.Blazor.Grids",
+  "BasePath": "_content/Excubo.Blazor.Grids",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Excubo.Blazor.Grids\\wwwroot",
+      "Source": "Excubo.Blazor.Grids",
+      "ContentRoot": "C:\\Users\\dylan\\source\\repos\\Dylans.Blazor.Grids\\Grid\\wwwroot\\",
+      "BasePath": "_content/Excubo.Blazor.Grids",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\dylan\\source\\repos\\Dylans.Blazor.Grids\\Grid\\wwwroot\\style.css",
+      "SourceId": "Excubo.Blazor.Grids",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\dylan\\source\\repos\\Dylans.Blazor.Grids\\Grid\\wwwroot\\",
+      "BasePath": "_content/Excubo.Blazor.Grids",
+      "RelativePath": "style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\style.css"
+    },
+    {
+      "Identity": "C:\\Users\\dylan\\source\\repos\\Dylans.Blazor.Grids\\Grid\\wwwroot\\style.min.css",
+      "SourceId": "Excubo.Blazor.Grids",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\dylan\\source\\repos\\Dylans.Blazor.Grids\\Grid\\wwwroot\\",
+      "BasePath": "_content/Excubo.Blazor.Grids",
+      "RelativePath": "style.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\style.min.css"
+    }
+  ]
+}
