@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Excubo.Blazor.Grids is a Blazor component library for a lightweight grid componen" +
     "t and dashboard component.")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("3.1.45.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("3.1.45+6226c67bd75fee79eda69aa427c3aeeea91bb379")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("3.1.45+9522ff6931b1d6129f523443902f65884dc3536c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Excubo.Blazor.Grids")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Blazor.Grids")]
 [assembly: System.Reflection.AssemblyVersionAttribute("3.1.45.0")]
